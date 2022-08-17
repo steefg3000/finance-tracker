@@ -32,6 +32,7 @@ gem 'net-smtp'
 
 gem 'devise'
 gem 'devise-bootstrap-views', '~> 1.0'
+gem "font-awesome-rails"
 
 gem 'iex-ruby-client'
 
