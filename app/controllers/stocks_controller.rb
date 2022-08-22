@@ -20,4 +20,11 @@ class StocksController < ApplicationController
       end
     end
   end
+
+  def update_prices
+    Stock.all.each do |stock|
+      stock.update_last_price
+    end
+    redirect_to my_portfolio_path
+  end
 end

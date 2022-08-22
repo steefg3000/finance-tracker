@@ -8,4 +8,5 @@ Rails.application.routes.draw do
   get 'search_stock', to: 'stocks#search'
   get 'search_friend', to: 'users#search'
   resources :users, only: [:show]
+  get 'update_stock_prices', to: 'stocks#update_prices'
 end
